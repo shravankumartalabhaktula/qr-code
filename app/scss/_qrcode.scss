@@ -1,0 +1,73 @@
+section {
+  height: 90%;
+  position: relative;
+}
+
+.qr-code {
+  background-color: $white;
+  width: 20%; // width: 30%
+  padding: 15px 0px;
+  border-radius: 15px;
+
+  @include breakpoint-down(medium) {
+    width: 80%;
+  }
+
+  @include breakpoint-down(large) {
+    width: 75%;
+  }
+
+  @include breakpoint-down(small) {
+    width: 87%;
+  }
+
+  &__card {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      width: 90%;
+      display: block;
+      border-radius: 15px;
+    }
+  }
+  &__description {
+
+    text-align: center;
+    padding: 10px 18px;
+
+    h2 {
+      font-size: $font-22;
+
+      @include breakpoint-down(medium) {
+        font-size: $font-44;
+      }
+
+      @include breakpoint-down(small) {
+        font-size: $font-22;
+      }
+    }
+
+    p {
+      font-size: $font-15;
+      color: $grayishBlue;
+      padding: 20px 15px; // padding: 10px;
+
+      @include breakpoint-down(medium) {
+        font-size: $font-30;
+      }
+
+      @include breakpoint-down(small) {
+        font-size: $font-15;
+      }
+    }
+
+    @include breakpoint-down(small) {
+      padding: 10px 20px;
+    }
+
+   
+  }
+}
